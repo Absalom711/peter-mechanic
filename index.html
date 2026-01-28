@@ -3,19 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <title>Nanapo Auto Panel Repair | Windhoek</title>
+
   <meta name="description" content="Nanapo Auto Panel Repair in Windhoek. Accident repairs, panel beating, spray painting, polishing and fiberglass repairs. Call or WhatsApp +264 81 318 0180.">
   <meta name="keywords" content="panel beating Windhoek, auto repair Namibia, spray painting, dent removal, Nanapo Auto">
   <meta name="author" content="Absalom Willem">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- FLOATING WHATSAPP -->
+<!-- FLOATING WHATSAPP BUTTON -->
 <a href="https://wa.me/264813180180" class="whatsapp-float" target="_blank">
   💬
 </a>
 
+<!-- HERO -->
 <header class="hero">
   <div class="hero-content reveal">
     <h1>NANAPO AUTO</h1>
@@ -28,6 +31,7 @@
   </div>
 </header>
 
+<!-- SERVICES -->
 <section class="services reveal">
   <h2>OUR SERVICES</h2>
   <ul>
@@ -40,14 +44,17 @@
   </ul>
 </section>
 
+<!-- GALLERY -->
 <section class="gallery reveal">
-  <div class="card"><img src="pic1.jpeg" alt="Spray Painting"></div>
-  <div class="card"><img src="pic2.jpeg" alt="Car Polishing"></div>
-  <div class="card"><img src="pic3.jpeg" alt="Panel Repair"></div>
+  <img src="images/spray-gun.png" alt="Auto Painting Spray Gun">
+  <img src="images/polisher.png" alt="Car Polishing">
+  <img src="images/wheel-repair.png" alt="Wheel and Panel Repair">
 </section>
 
+<!-- CONTACT -->
 <section class="contact reveal">
   <h2>CONTACT US</h2>
+
   <form action="mailto:info@nanapoauto.com" method="post" enctype="text/plain">
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
@@ -56,6 +63,7 @@
   </form>
 </section>
 
+<!-- MAP -->
 <section class="map reveal">
   <h2>Find Us in Windhoek</h2>
   <iframe 
@@ -64,12 +72,32 @@
   </iframe>
 </section>
 
+<!-- FOOTER -->
 <footer>
   <h2>+264 81 318 0180</h2>
   <p>Call or WhatsApp Now</p>
   <p>© 2025 Nanapo Auto Panel Repair | Developed by Absalom Willem</p>
 </footer>
 
-<script src="script.js"></script>
+<!-- SIMPLE REVEAL ANIMATION -->
+<script>
+const reveals = document.querySelectorAll(".reveal");
+
+function revealOnScroll() {
+  for (let i = 0; i < reveals.length; i++) {
+    const windowHeight = window.innerHeight;
+    const elementTop = reveals[i].getBoundingClientRect().top;
+    const elementVisible = 100;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", revealOnScroll);
+revealOnScroll();
+</script>
+
 </body>
 </html>
