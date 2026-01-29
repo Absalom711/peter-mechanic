@@ -82,6 +82,12 @@ body {
 .services li {
   padding: 12px;
   border-bottom: 1px solid #333;
+  transition: 0.3s;
+}
+
+.services li:hover {
+  color: gold;
+  cursor: pointer;
 }
 
 /* GALLERY */
@@ -131,6 +137,12 @@ body {
   border-radius: 25px;
   border: none;
   font-weight: bold;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background: red;
+  color: white;
 }
 
 /* MAP */
@@ -142,7 +154,7 @@ body {
 .map iframe {
   width: 100%;
   max-width: 600px;
-  height: 300px;
+  height: 400px;
   border-radius: 15px;
   border: none;
 }
