@@ -145,6 +145,14 @@ body {
   color: white;
 }
 
+/* WhatsApp QR */
+.whatsapp-qr {
+  display: block;
+  margin: 15px auto 30px;
+  width: 180px;
+  height: 180px;
+}
+
 /* MAP */
 .map {
   padding: 40px 20px;
