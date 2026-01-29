@@ -153,6 +153,7 @@ body {
   height: 180px;
 }
 
+
 /* MAP */
 .map {
   padding: 40px 20px;
@@ -208,3 +209,4 @@ footer h2 {
   opacity: 1;
   transform: translateY(0);
 }
+
