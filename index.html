@@ -3,12 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Nanapo Auto Panel Repair | Windhoek</title>
-
   <meta name="description" content="Nanapo Auto Panel Repair in Windhoek. Accident repairs, panel beating, spray painting, polishing and fiberglass repairs. Call or WhatsApp +264 81 318 0180.">
   <meta name="keywords" content="panel beating Windhoek, auto repair Namibia, spray painting, dent removal, Nanapo Auto">
   <meta name="author" content="Absalom Willem">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,14 +18,12 @@
 
 <!-- HERO -->
 <header class="hero">
+  <img src="logo.png" alt="Nanapo Auto Logo" class="logo">
   <div class="hero-content reveal">
     <h1>NANAPO AUTO</h1>
     <h2>PANEL REPAIR</h2>
     <p class="tagline">BUILT STRAIGHT. PAINTED RIGHT.</p>
-
-    <a href="https://wa.me/264813180180" class="cta">
-      BOOK NOW – WhatsApp
-    </a>
+    <a href="https://wa.me/264813180180" class="cta">BOOK NOW – WhatsApp</a>
   </div>
 </header>
 
@@ -46,15 +42,14 @@
 
 <!-- GALLERY -->
 <section class="gallery reveal">
-  <img src=img1.1.jpeg alt="Auto Painting Spray Gun">
-  <img src=img2.2.jpeg alt="Car Polishing">
-  <img src=img3.3.jpeg alt="Wheel and Panel Repair">
+  <div class="card"><img src="img1.1.jpeg" alt="Auto Painting Spray Gun"></div>
+  <div class="card"><img src="img2.2.jpeg" alt="Car Polishing"></div>
+  <div class="card"><img src="img3.3.jpeg" alt="Wheel and Panel Repair"></div>
 </section>
 
 <!-- CONTACT -->
 <section class="contact reveal">
   <h2>CONTACT US</h2>
-
   <form action="mailto:info@nanapoauto.com" method="post" enctype="text/plain">
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
@@ -79,26 +74,25 @@
   <p>© 2025 Nanapo Auto Panel Repair | Developed by Absalom Willem</p>
 </footer>
 
-<!-- SIMPLE REVEAL ANIMATION -->
+<!-- SCROLL REVEAL SCRIPT -->
 <script>
-const reveals = document.querySelectorAll(".reveal");
+const reveals = document.querySelectorAll('.reveal');
 
 function revealOnScroll() {
-  for (let i = 0; i < reveals.length; i++) {
+  reveals.forEach(el => {
     const windowHeight = window.innerHeight;
-    const elementTop = reveals[i].getBoundingClientRect().top;
+    const revealTop = el.getBoundingClientRect().top;
     const elementVisible = 100;
 
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
+    if (revealTop < windowHeight - elementVisible) {
+      el.classList.add('active');
     }
-  }
+  });
 }
 
-window.addEventListener("scroll", revealOnScroll);
+window.addEventListener('scroll', revealOnScroll);
 revealOnScroll();
 </script>
 
 </body>
 </html>
-
