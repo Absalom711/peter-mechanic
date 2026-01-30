@@ -1,4 +1,8 @@
 /* GLOBAL */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -6,10 +10,16 @@ body {
   color: white;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  backface-visibility: hidden;
+}
+
 /* LOGO */
 .logo {
   width: 120px;
-  display: block;
   margin: 0 auto 20px;
 }
 
@@ -41,6 +51,7 @@ body {
   margin: 15px 0;
 }
 
+/* CTA */
 .cta {
   display: inline-block;
   margin-top: 25px;
@@ -50,7 +61,7 @@ body {
   font-weight: bold;
   border-radius: 30px;
   text-decoration: none;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .cta:hover {
@@ -104,11 +115,17 @@ body {
   transform: skew(-5deg);
   overflow: hidden;
   border: 3px solid red;
+  border-radius: 10px;
+  background: black;
 }
 
 .card img {
-  width: 100%;
-  transform: skew(5deg) scale(1.1);
+  transform: skew(5deg);
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: skew(5deg) scale(1.05);
 }
 
 /* CONTACT */
@@ -125,10 +142,17 @@ body {
   gap: 15px;
 }
 
-.contact input, .contact textarea {
+.contact input,
+.contact textarea {
   padding: 12px;
   border-radius: 8px;
   border: none;
+  font-size: 14px;
+}
+
+.contact textarea {
+  resize: vertical;
+  min-height: 100px;
 }
 
 .contact button {
@@ -138,6 +162,7 @@ body {
   border: none;
   font-weight: bold;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .contact button:hover {
@@ -145,14 +170,13 @@ body {
   color: white;
 }
 
-/* WhatsApp QR */
+/* WHATSAPP QR */
 .whatsapp-qr {
   display: block;
   margin: 15px auto 30px;
   width: 180px;
   height: 180px;
 }
-
 
 /* MAP */
 .map {
@@ -196,13 +220,18 @@ footer h2 {
   text-decoration: none;
   box-shadow: 0 0 15px #25D366;
   z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
 }
 
 /* SCROLL ANIMATION */
 .reveal {
   opacity: 0;
   transform: translateY(40px);
-  transition: 1s;
+  transition: 1s ease;
 }
 
 .reveal.active {
@@ -210,3 +239,21 @@ footer h2 {
   transform: translateY(0);
 }
 
+/* MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .gallery {
+    padding: 20px;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
