@@ -12,7 +12,7 @@
 <body>
 
 <!-- FLOATING WHATSAPP BUTTON -->
-<a href="https://wa.me/264813180180" class="whatsapp-float" target="_blank">
+<a href="https://wa.me/264813180180" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
   💬
 </a>
 
@@ -42,34 +42,44 @@
 
 <!-- GALLERY -->
 <section class="gallery reveal">
-  <div class="card"><img src="img1.1.jpeg" alt="Auto Painting Spray Gun"></div>
-  <div class="card"><img src="img2.2.jpeg" alt="Car Polishing"></div>
-  <div class="card"><img src="img3.3.jpeg" alt="Wheel and Panel Repair"></div>
+  <div class="card">
+    <img src="img1.1.jpeg" alt="Auto Painting Spray Gun" loading="lazy">
+  </div>
+  <div class="card">
+    <img src="img2.2.jpeg" alt="Car Polishing" loading="lazy">
+  </div>
+  <div class="card">
+    <img src="img3.3.jpeg" alt="Wheel and Panel Repair" loading="lazy">
+  </div>
 </section>
 
 <!-- CONTACT -->
 <section class="contact reveal">
   <h2>CONTACT US</h2>
-  
-  <!-- WhatsApp QR Code -->
- <p>Scan the QR code to WhatsApp us directly:</p>
-<img src="https://chart.googleapis.com/chart?cht=qr&chs=180x180&chl=https%3A%2F%2Fwa.me%2F264813180180&choe=UTF-8" 
-     alt="WhatsApp QR Code" class="whatsapp-qr">
 
-<form action="mailto:info@nanapoauto.com" method="post" enctype="text/plain">
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="email" placeholder="Your Email" required>
-  <textarea name="message" placeholder="How can we help you?" required></textarea>
-  <button type="submit">Send Message</button>
-</form>
+  <p>Scan the QR code to WhatsApp us directly:</p>
+  <img 
+    src="https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=https://wa.me/264813180180"
+    alt="WhatsApp QR Code"
+    class="whatsapp-qr"
+    loading="lazy"
+  >
 
+  <form action="mailto:info@nanapoauto.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="How can we help you?" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
 
 <!-- MAP -->
 <section class="map reveal">
   <h2>Find Us at Namcor Service Soweto</h2>
   <iframe 
     src="https://maps.google.com/maps?q=Namcor%20Service%20Soweto&t=&z=15&ie=UTF8&iwloc=&output=embed"
-    loading="lazy">
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
   </iframe>
 </section>
 
@@ -102,4 +112,3 @@ revealOnScroll();
 
 </body>
 </html>
-
