@@ -1,115 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <meta charset="UTF-8">
   <title>Nanapo Auto Panel Repair | Windhoek</title>
-  <meta name="description" content="Nanapo Auto Panel Repair in Windhoek. Accident repairs, panel beating, spray painting, polishing, fiberglass repairs and custom auto body work." />
-
-  <link rel="stylesheet" href="css/style.css" />
-
-  <!-- Accessibility -->
-  <meta name="theme-color" content="#0f172a" />
+  <meta name="description" content="Nanapo Auto Panel Repair in Windhoek. Accident repairs, panel beating, spray painting, polishing and fiberglass repairs. Call or WhatsApp +264 81 318 0180.">
+  <meta name="keywords" content="panel beating Windhoek, auto repair Namibia, spray painting, dent removal, Nanapo Auto">
+  <meta name="author" content="Absalom Willem">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <!-- Skip link for keyboard users -->
-  <a href="#main" class="skip-link">Skip to main content</a>
 
-  <!-- Header / Navigation -->
-  <header class="header">
-    <div class="container nav-container">
-      <div class="brand">
-        <span class="logo">Nanapo Auto</span>
-      </div>
+<!-- FLOATING WHATSAPP BUTTON -->
+<a href="https://wa.me/264813180180" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+  💬
+</a>
 
-      <nav aria-label="Main navigation">
-        <button class="menu-toggle" aria-expanded="false" aria-controls="nav-list">
-          ☰
-        </button>
-        <ul id="nav-list" class="nav-list">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<!-- HERO -->
+<header class="hero">
+  <img src="logo.png" alt="Nanapo Auto Logo" class="logo">
+  <div class="hero-content reveal">
+    <h1>NANAPO AUTO</h1>
+    <h2>PANEL REPAIR</h2>
+    <p class="tagline">BUILT STRAIGHT. PAINTED RIGHT.</p>
+    <a href="https://wa.me/264813180180" class="cta">BOOK NOW – WhatsApp</a>
+  </div>
+</header>
 
-  <main id="main">
+<!-- SERVICES -->
+<section class="services reveal">
+  <h2>OUR SERVICES</h2>
+  <ul>
+    <li>Accident Repairs & Dent Removal</li>
+    <li>Precision Auto Painting</li>
+    <li>Custom Body Modifications</li>
+    <li>Car Polishing & Detailing</li>
+    <li>Headlight Restoration</li>
+    <li>Fiberglass Repairs & Fabrications</li>
+  </ul>
+</section>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-      <div class="container hero-grid">
-        <div class="hero-text">
-          <h1>Nanapo Auto Panel Repair</h1>
-          <p>Professional accident repairs, auto body restoration and precision spray painting in Windhoek.</p>
-          <a href="https://wa.me/264813180180" class="btn" target="_blank" rel="noopener">WhatsApp Us</a>
-        </div>
+<!-- GALLERY -->
+<section class="gallery reveal">
+  <div class="card">
+    <img src="img1.1.jpeg" alt="Auto Painting Spray Gun" loading="lazy">
+  </div>
+  <div class="card">
+    <img src="img2.2.jpeg" alt="Car Polishing" loading="lazy">
+  </div>
+  <div class="card">
+    <img src="img3.3.jpeg" alt="Wheel and Panel Repair" loading="lazy">
+  </div>
+</section>
 
-        <div class="hero-card" aria-hidden="true">
-          <div class="glow-ring"></div>
-          <div class="card-content">
-            <h3>Open Today</h3>
-            <p>Soweto, Namcor Service Station</p>
-            <p>📞 +264 81 318 0180</p>
-          </div>
-        </div>
-      </div>
-    </section>
+<!-- CONTACT -->
+<section class="contact reveal">
+  <h2>CONTACT US</h2>
 
-    <!-- Services -->
-    <section id="services" class="section">
-      <div class="container">
-        <h2>Our Services</h2>
-        <div id="servicesGrid" class="services-grid" aria-live="polite"></div>
-      </div>
-    </section>
+  <p>Scan the QR code to WhatsApp us directly:</p>
+  <img 
+    src="https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=https://wa.me/264813180180"
+    alt="WhatsApp QR Code"
+    class="whatsapp-qr"
+    loading="lazy"
+  >
 
-    <!-- About -->
-    <section id="about" class="section alt">
-      <div class="container">
-        <h2>About Nanapo Auto</h2>
-        <p>
-          Nanapo Auto Panel Repair is a Windhoek-based auto body workshop specializing in high-quality accident repairs,
-          refinishing, and vehicle restoration. Our mission is to deliver reliable, professional, and affordable services
-          using modern automotive repair standards.
-        </p>
-      </div>
-    </section>
+  <form action="mailto:info@nanapoauto.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="How can we help you?" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
 
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <div class="container contact-grid">
-        <div>
-          <h2>Contact Us</h2>
-          <p><strong>Location:</strong> Soweto, Namcor Service Station, Windhoek</p>
-          <p><strong>Phone / WhatsApp:</strong> +264 81 318 0180</p>
+<!-- MAP -->
+<section class="map reveal">
+  <h2>Find Us at Namcor Service Soweto</h2>
+  <iframe 
+    src="https://maps.google.com/maps?q=Namcor%20Service%20Soweto&t=&z=15&ie=UTF8&iwloc=&output=embed"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</section>
 
-          <a href="https://wa.me/264813180180" class="btn" target="_blank" rel="noopener">Chat on WhatsApp</a>
-        </div>
+<!-- FOOTER -->
+<footer>
+  <h2>+264 81 318 0180</h2>
+  <p>Call or WhatsApp Now</p>
+  <p>© 2025 Nanapo Auto Panel Repair | Developed by Absalom Willem</p>
+</footer>
 
-        <div class="qr-box">
-          <p>Scan to WhatsApp us</p>
-          <img
-            src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/264813180180"
-            alt="QR code linking to Nanapo Auto WhatsApp"
-            loading="lazy"
-          />
-        </div>
-      </div>
-    </section>
+<!-- SCROLL REVEAL SCRIPT -->
+<script>
+const reveals = document.querySelectorAll('.reveal');
 
-  </main>
+function revealOnScroll() {
+  reveals.forEach(el => {
+    const windowHeight = window.innerHeight;
+    const revealTop = el.getBoundingClientRect().top;
+    const elementVisible = 100;
 
-  <footer class="footer">
-    <p>© 2026 Nanapo Auto Panel Repair — Windhoek, Namibia</p>
-  </footer>
+    if (revealTop < windowHeight - elementVisible) {
+      el.classList.add('active');
+    }
+  });
+}
 
-  <script src="js/app.js"></script>
+window.addEventListener('scroll', revealOnScroll);
+revealOnScroll();
+</script>
+
 </body>
 </html>
-
-
