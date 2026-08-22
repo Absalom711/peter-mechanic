@@ -2,121 +2,381 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Nanapo Auto Panel Repair | Windhoek</title>
-  <meta name="description" content="Nanapo Auto Panel Repair in Windhoek. Accident repairs, panel beating, spray painting, polishing and fiberglass repairs. Call or WhatsApp +264 81 318 0180.">
-  <meta name="keywords" content="panel beating Windhoek, auto repair Namibia, spray painting, dent removal, Nanapo Auto">
-  <meta name="author" content="Absalom Willem">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
-<!-- FLOATING WHATSAPP BUTTON -->
-<a href="https://wa.me/264813180180" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-  💬
-</a>
+  <title>Nanapo Auto Panel Repair | Panel Beating & Auto Repairs in Windhoek</title>
 
-<!-- HERO -->
-<header class="hero">
-  <img src="logo.png" alt="Nanapo Auto Logo" class="logo">
-  <div class="hero-content reveal">
-    <h1>NANAPO AUTO</h1>
-    <h2>PANEL REPAIR</h2>
-    <p class="tagline">BUILT STRAIGHT. PAINTED RIGHT.</p>
-    <a href="https://wa.me/264813180180" class="cta">BOOK NOW – WhatsApp</a>
-  </div>
-</header>
-
-<!-- SERVICES -->
-<section class="services reveal">
-  <h2>OUR SERVICES</h2>
-  <ul>
-    <li>Accident Repairs & Dent Removal</li>
-    <li>Precision Auto Painting</li>
-    <li>Custom Body Modifications</li>
-    <li>Car Polishing & Detailing</li>
-    <li>Headlight Restoration</li>
-    <li>Fiberglass Repairs & Fabrications</li>
-  </ul>
-</section>
-
-<!-- GALLERY -->
-<section class="gallery reveal">
-  <div class="card">
-    <img src="img1.1.jpeg" alt="Auto Painting Spray Gun" loading="lazy">
-  </div>
-  <div class="card">
-    <img src="img2.2.jpeg" alt="Car Polishing" loading="lazy">
-  </div>
-  <div class="card">
-    <img src="img3.3.jpeg" alt="Wheel and Panel Repair" loading="lazy">
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="contact reveal">
-  <h2>CONTACT US</h2>
-
-  <p>Scan the QR code to WhatsApp us directly:</p>
-  <img 
-    src="https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=https://wa.me/264813180180"
-    alt="WhatsApp QR Code"
-    class="whatsapp-qr"
-    loading="lazy"
+  <meta
+    name="description"
+    content="Nanapo Auto Panel Repair in Windhoek, Namibia. Professional accident repairs, dent removal, auto painting, polishing, headlight restoration and fiberglass repairs."
   >
 
-  <form action="mailto:info@nanapoauto.com" method="post" enctype="text/plain">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="How can we help you?" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
+  <meta
+    name="keywords"
+    content="panel beating Windhoek, auto repair Namibia, accident repairs Windhoek, spray painting, dent removal, car polishing, fiberglass repairs"
+  >
 
-<!-- MAP -->
-<section class="map reveal">
-  <h2>Find Us at Nanapo Auto</h2>
-  <iframe 
-    src="https://maps.google.com/maps?q=22.5150177,17.0451569&z=15&output=embed"
-    width="100%"
-    height="400"
-    style="border:0; border-radius:15px;"
-    allowfullscreen
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
-</section>
+  <meta name="author" content="Absalom Willem">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nanapo Auto Panel Repair | Windhoek">
+  <meta
+    property="og:description"
+    content="Built Straight. Painted Right. Professional panel repair and auto body services in Windhoek."
+  >
+  <meta property="og:image" content="logo.png">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- SKIP LINK -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
 
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a
+    href="https://wa.me/264813180180"
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat with Nanapo Auto on WhatsApp"
+  >
+    💬
+  </a>
 
-<!-- FOOTER -->
-<footer>
-  <h2>+264 81 318 0180</h2>
-  <p>Call or WhatsApp Now</p>
-  <p>© 2025 Nanapo Auto Panel Repair | Developed by Absalom Willem</p>
-</footer>
 
-<!-- SCROLL REVEAL SCRIPT -->
-<script>
-const reveals = document.querySelectorAll('.reveal');
+  <!-- HEADER / HERO -->
+  <header class="hero" id="home">
 
-function revealOnScroll() {
-  reveals.forEach(el => {
-    const windowHeight = window.innerHeight;
-    const revealTop = el.getBoundingClientRect().top;
-    const elementVisible = 100;
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="#home" class="brand">NANAPO AUTO</a>
 
-    if (revealTop < windowHeight - elementVisible) {
-      el.classList.add('active');
-    }
-  });
-}
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a href="#location">Location</a>
+      </div>
+    </nav>
 
-window.addEventListener('scroll', revealOnScroll);
-revealOnScroll();
-</script>
+    <div class="hero-content reveal">
+
+      <img
+        src="logo.png"
+        alt="Nanapo Auto Panel Repair Logo"
+        class="logo"
+      >
+
+      <h1>NANAPO AUTO</h1>
+
+      <p class="hero-title">PANEL REPAIR</p>
+
+      <p class="tagline">
+        BUILT STRAIGHT. PAINTED RIGHT.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a
+          href="https://wa.me/264813180180"
+          class="cta"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          BOOK ON WHATSAPP
+        </a>
+
+        <a href="tel:+264813180180" class="cta secondary-cta">
+          CALL NOW
+        </a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <main id="main-content">
+
+
+    <!-- SERVICES -->
+    <section class="services reveal" id="services">
+
+      <div class="section-heading">
+        <span>WHAT WE DO</span>
+        <h2>OUR SERVICES</h2>
+        <p>
+          Quality workmanship and professional repairs to get your vehicle
+          looking its best again.
+        </p>
+      </div>
+
+      <div class="services-grid">
+
+        <article class="service-card">
+          <h3>🚗 Accident Repairs</h3>
+          <p>
+            Professional accident damage repairs and dent removal.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <h3>🎨 Precision Auto Painting</h3>
+          <p>
+            Quality spray painting and professional paint finishing.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <h3>🔧 Body Modifications</h3>
+          <p>
+            Custom body modifications and auto body work.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <h3>✨ Polishing & Detailing</h3>
+          <p>
+            Restore your vehicle's shine with professional polishing.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <h3>💡 Headlight Restoration</h3>
+          <p>
+            Improve visibility and appearance with restored headlights.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <h3>🛠️ Fiberglass Repairs</h3>
+          <p>
+            Fiberglass repairs, fabrication and restoration services.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- GALLERY -->
+    <section class="gallery-section reveal" id="gallery">
+
+      <div class="section-heading">
+        <span>OUR WORK</span>
+        <h2>GALLERY</h2>
+        <p>
+          Take a look at some of our workmanship.
+        </p>
+      </div>
+
+      <div class="gallery">
+
+        <figure class="card">
+          <img
+            src="img1.1.jpeg"
+            alt="Professional auto painting work at Nanapo Auto"
+            loading="lazy"
+          >
+        </figure>
+
+        <figure class="card">
+          <img
+            src="img2.2.jpeg"
+            alt="Car polishing and detailing service"
+            loading="lazy"
+          >
+        </figure>
+
+        <figure class="card">
+          <img
+            src="img3.3.jpeg"
+            alt="Vehicle panel and wheel repair work"
+            loading="lazy"
+          >
+        </figure>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact reveal" id="contact">
+
+      <div class="section-heading">
+        <span>GET IN TOUCH</span>
+        <h2>CONTACT US</h2>
+        <p>
+          Contact us today for enquiries, bookings or a quotation.
+        </p>
+      </div>
+
+
+      <div class="contact-options">
+
+        <a href="tel:+264813180180" class="contact-option">
+          <strong>📞 Call Us</strong>
+          <span>+264 81 318 0180</span>
+        </a>
+
+        <a
+          href="https://wa.me/264813180180"
+          class="contact-option"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <strong>💬 WhatsApp Us</strong>
+          <span>Chat with us directly</span>
+        </a>
+
+      </div>
+
+
+      <!-- QR CODE -->
+      <div class="qr-container">
+
+        <p>Scan to chat with us on WhatsApp:</p>
+
+        <img
+          src="https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=https%3A%2F%2Fwa.me%2F264813180180"
+          alt="QR code linking to Nanapo Auto WhatsApp"
+          class="whatsapp-qr"
+          loading="lazy"
+        >
+
+      </div>
+
+
+      <!-- CONTACT FORM -->
+      <form
+        action="mailto:info@nanapoauto.com"
+        method="post"
+        enctype="text/plain"
+        class="contact-form"
+      >
+
+        <label for="name">Your Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          autocomplete="name"
+          required
+        >
+
+        <label for="email">Your Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          autocomplete="email"
+          required
+        >
+
+        <label for="message">Your Message</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Tell us how we can help"
+          rows="6"
+          required
+        ></textarea>
+
+        <button type="submit">
+          SEND MESSAGE
+        </button>
+
+      </form>
+
+    </section>
+
+
+    <!-- MAP -->
+    <section class="map reveal" id="location">
+
+      <div class="section-heading">
+        <span>VISIT US</span>
+        <h2>FIND NANAPO AUTO</h2>
+      </div>
+
+      <iframe
+        src="https://maps.google.com/maps?q=22.5150177,17.0451569&z=15&output=embed"
+        title="Location of Nanapo Auto Panel Repair"
+        width="100%"
+        height="400"
+        style="border:0; border-radius:15px;"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <h2>NANAPO AUTO PANEL REPAIR</h2>
+
+    <a href="tel:+264813180180" class="footer-phone">
+      +264 81 318 0180
+    </a>
+
+    <p>Call or WhatsApp us today.</p>
+
+    <p class="copyright">
+      © <span id="year"></span> Nanapo Auto Panel Repair.
+      Developed by Absalom Willem.
+    </p>
+
+  </footer>
+
+
+  <!-- SCRIPTS -->
+  <script>
+
+    // AUTOMATIC COPYRIGHT YEAR
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+
+    // SCROLL REVEAL
+    const reveals = document.querySelectorAll(".reveal");
+
+    const revealOnScroll = () => {
+
+      reveals.forEach((element) => {
+
+        const revealTop =
+          element.getBoundingClientRect().top;
+
+        const revealPoint =
+          window.innerHeight - 100;
+
+        if (revealTop < revealPoint) {
+          element.classList.add("active");
+        }
+
+      });
+
+    };
+
+    window.addEventListener("scroll", revealOnScroll);
+
+    revealOnScroll();
+
+  </script>
 
 </body>
-</html> 
-
-
+</html>
